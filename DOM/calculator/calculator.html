@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 m-5 rounded-3 bg-dark">
+            <input id="result" type="text" size="55%" class="ms-3 mt-5 rounded-5" style="height: 80px;" class="form-control" placeholder="Enter">
+            <br>
+            <button id="ac" onclick="clearBox()" class="btn-danger rounded-3 mt-5 ms-4 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">AC</button>
+            <button id="c" onclick="removeLastItem()" class="btn-danger rounded-3 ms-2 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">C</button>
+            <br>
+            <button id="9" onclick="displayNumber(9)" class="btn-secondary rounded-3 mt-5 ms-4 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">9</button>
+            <button id="8" onclick="displayNumber(8)" class="btn-secondary rounded-3 ms-2 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">8</button>
+            <button id="7" onclick="displayNumber(7)" class="btn-secondary rounded-3 ms-2 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">7</button>
+            <button id="/" onclick="displayNumber('/')" class="btn-secondary rounded-3 ms-3 mb-4 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">/</button>
+            <br>
+            <button id="6" onclick="displayNumber(6)" class="btn-secondary rounded-3 mt-3 ms-4 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">6</button>
+            <button id="5" onclick="displayNumber(5)" class="btn-secondary rounded-3 ms-2 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">5</button>
+            <button id="4" onclick="displayNumber(4)" class="btn-secondary rounded-3 ms-2 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">4</button>
+            <button id="" onclick="displayNumber('*')" class="btn-secondary rounded-3 ms-3 mb-4 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">*</button>
+            <br>
+            <button id="3" onclick="displayNumber(3)" class="btn-secondary rounded-3 mt-3 ms-4 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">3</button>
+            <button id="2" onclick="displayNumber(2)" class="btn-secondary rounded-3 ms-2 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">2</button>
+            <button id="1" onclick="displayNumber(1)" class="btn-secondary rounded-3 ms-2 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">1</button>
+            <button id="-" onclick="displayNumber('-')" class="btn-secondary rounded-3 ms-3 mb-4 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">-</button>
+            <br>
+            <button id="0" onclick="displayNumber(0)" class="btn-secondary rounded-3 mt-3 ms-4 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">0</button>
+            <button id="." onclick="displayNumber('.')" class="btn-secondary rounded-3 ms-2 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">.</button>
+            <button id="=" onclick="evaluateExpression()" class="btn-secondary rounded-3 ms-2 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">=</button>
+            <button id="+" onclick="displayNumber('+')" class="btn-secondary rounded-3 ms-3 mb-5 fs-3 fw-bold "type="submit" style="height: 50px; width: 20%;">+</button>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    
+</body>
+<script src="./cal.js"></script>
+</html>
